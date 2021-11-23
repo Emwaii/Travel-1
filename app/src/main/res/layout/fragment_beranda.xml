@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".BerandaFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/banner_view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:clipToPadding="false"
+        android:clipChildren="false"
+        android:layout_marginTop="8dp"
+        android:paddingStart="24dp"
+        android:paddingEnd="24dp"/>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        app:cardElevation="2dp"
+        app:cardUseCompatPadding="true"
+        app:cardBackgroundColor="@color/white">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="left"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/t_asal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="8dp"
+                    android:gravity="left"
+                    android:text="Asal"
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/asal"
+                    android:layout_width="165dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="4dp"
+                    android:hint="Kota Asal Anda"
+                    android:textColor="@color/teal_700"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/t_tglberangkat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tanggal Berangkat"
+                    android:textSize="15sp"
+                    android:textColor="@color/black"
+                    android:gravity="left"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_below="@id/asal"/>
+
+                <EditText
+                    android:id="@+id/tglberangkat"
+                    android:layout_width="167dp"
+                    android:layout_height="50dp"
+                    android:layout_below="@id/t_tglberangkat"
+                    android:layout_marginLeft="4dp"
+                    android:hint="dd/mm/yyyy"
+                    android:textColor="@color/teal_700"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/t_jenismobil"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="8dp"
+                    android:gravity="left"
+                    android:text="Jenis Mobil"
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
+
+                <Spinner
+                    android:layout_width="171dp"
+                    android:layout_height="48dp"
+                    android:entries="@array/jenismobil"
+                    android:textColor="@color/teal_700"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="20dp"
+                    android:text="Cari"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="right">
+
+                <TextView
+                    android:id="@+id/t_tujuan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginTop="8dp"
+                    android:text="Tujuan"
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/tujuan"
+                    android:layout_width="171dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="4dp"
+                    android:hint="Kota Tujuan Anda"
+                    android:textColor="@color/teal_700"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/t_tglkembali"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/asal"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginTop="8dp"
+                    android:text="Tanggal Kembali"
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
+
+                <EditText
+                    android:id="@+id/tglkembali"
+                    android:layout_width="170dp"
+                    android:layout_height="50dp"
+                    android:layout_below="@id/t_tglberangkat"
+                    android:layout_marginLeft="4dp"
+                    android:hint="dd/mm/yyyy"
+                    android:textColor="@color/teal_700"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/t_penumpang"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginTop="8dp"
+                    android:text="Penumpang"
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/penumpang"
+                    android:layout_width="171dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="4dp"
+                    android:hint="1 Orang"
+                    android:textColor="@color/teal_700"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_begin="188dp" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</FrameLayout>
