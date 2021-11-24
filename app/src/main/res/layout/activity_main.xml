@@ -19,8 +19,8 @@
         android:id="@+id/bottomView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:itemBackground="@android:color/white"
         android:layout_alignParentBottom="true"
+        app:itemBackground="@android:color/white"
         app:menu="@menu/navigasi_bawah">
 
     </com.google.android.material.bottomnavigation.BottomNavigationView>

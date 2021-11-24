@@ -55,7 +55,7 @@
                     android:layout_height="50dp"
                     android:layout_marginLeft="4dp"
                     android:hint="Kota Asal Anda"
-                    android:textColor="@color/teal_700"
+                    android:textColor="@color/ijo"
                     android:textStyle="bold" />
 
                 <TextView

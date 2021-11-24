@@ -8,19 +8,19 @@
 
     <item
         android:id="@+id/tiketMenu"
-        android:icon="@drawable/ic_baseline_microwave_24"
+        android:icon="@drawable/ic_tiket"
         android:title="Tiket"
         />
 
     <item
         android:id="@+id/infoMenu"
-        android:icon="@drawable/ic_baseline_info_24"
+        android:icon="@drawable/ic_info"
         android:title="Info"
         />
 
     <item
         android:id="@+id/akunMenu"
-        android:icon="@drawable/ic_baseline_account_circle_24"
+        android:icon="@drawable/ic_akun"
         android:title="Akun"
         />
 </menu>
