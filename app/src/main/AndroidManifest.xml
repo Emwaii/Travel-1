@@ -12,7 +12,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Travel">
-
+        <activity
+            android:name=".RingkasanActivity"
+            android:exported="false"
+            android:label="@string/title_activity_ringkasan"
+            android:theme="@style/Theme.Travel.NoActionBar" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
