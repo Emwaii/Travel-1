@@ -36,6 +36,7 @@ class MainActivity : AppCompatActivity() {
             R.id.berandaMenu -> selectedFragment(BerandaFragment.getInstance())
             R.id.tiketMenu -> selectedFragment(TiketFragment.getInstance())
             R.id.infoMenu -> selectedFragment(InfoFragment.getInstance())
+            R.id.akunMenu -> selectedFragment(AkunFragment.getInstance())
         }
     }
 
