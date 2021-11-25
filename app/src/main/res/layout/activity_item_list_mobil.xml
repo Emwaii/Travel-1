@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:layout_marginTop="5dp"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp"
+    android:layout_marginBottom="8dp"
+    android:layout_height="220dp"
+    tools:context=".item_list_mobil">
+
+
+    <ImageView
+        android:id="@+id/gambar_mobil"
+        android:background="@drawable/kotak"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginLeft="6dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="6dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/jk2"
+        android:elevation="4dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_below="@+id/gambar_mobil">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:id="@+id/l_nama_mobil"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="6dp"
+                android:text="Avanza"
+                android:textAlignment="textStart"
+                android:textColor="@color/ijo_dark"
+                android:textSize="26sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/l_jurusan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="6dp"
+                android:text="Yogyakarta-Cirebon"
+                android:textColor="@color/abu"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="right"
+            android:layout_marginRight="8dp"
+            >
+
+            <Button
+                android:id="@+id/t_status"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:background="@drawable/kotak_tersedia"
+                android:text="Tersedia"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/white"
+                android:elevation="2dp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
